@@ -1,0 +1,457 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.fixer.io/api/latest?access_key=c9aae6d7b9d240dfc732423049794d70&format=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 04 Oct 2020 12:18:03 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbb997f9aba862a0f02d7360bfebb1c811601813882; expires=Tue, 03-Nov-20
+        12:18:02 GMT; path=/; domain=.fixer.io; HttpOnly; SameSite=Lax
+      X-Apilayer-Transaction-Id:
+      - 58a61984-101c-4006-b4f8-4aacb084a2df
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Last-Modified:
+      - Sun, 04 Oct 2020 11:34:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.022'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0595253fb900002debdf3bc200000001'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=132&lkg-time=1601813883"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5dced7df8f652deb-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "success":true,
+          "timestamp":1601811245,
+          "base":"EUR",
+          "date":"2020-10-04",
+          "rates":{
+            "AED":4.303912,
+            "AFN":90.046007,
+            "ALL":124.088239,
+            "AMD":572.499761,
+            "ANG":2.103604,
+            "AOA":738.774147,
+            "ARS":90.063203,
+            "AUD":1.635546,
+            "AWG":2.109069,
+            "AZN":1.99655,
+            "BAM":1.956807,
+            "BBD":2.366142,
+            "BDT":99.352797,
+            "BGN":1.956401,
+            "BHD":0.4418,
+            "BIF":2268.42099,
+            "BMD":1.171705,
+            "BND":1.598459,
+            "BOB":8.091948,
+            "BRL":6.658922,
+            "BSD":1.171915,
+            "BTC":0.000111,
+            "BTN":85.978101,
+            "BWP":13.485678,
+            "BYN":3.072747,
+            "BYR":22965.419117,
+            "BZD":2.36224,
+            "CAD":1.559838,
+            "CDF":2302.400861,
+            "CHF":1.078891,
+            "CLF":0.033529,
+            "CLP":925.182897,
+            "CNY":7.956937,
+            "COP":4535.670276,
+            "CRC":707.261256,
+            "CUC":1.171705,
+            "CUP":31.050184,
+            "CVE":110.668004,
+            "CZK":27.145365,
+            "DJF":208.235884,
+            "DKK":7.443144,
+            "DOP":68.510055,
+            "DZD":151.18501,
+            "EGP":18.451,
+            "ERN":17.575995,
+            "ETB":43.123288,
+            "EUR":1,
+            "FJD":2.501637,
+            "FKP":0.905932,
+            "GBP":0.905946,
+            "GEL":3.761631,
+            "GGP":0.905932,
+            "GHS":6.790078,
+            "GIP":0.905932,
+            "GMD":60.698837,
+            "GNF":11424.124722,
+            "GTQ":9.123289,
+            "GYD":245.048627,
+            "HKD":9.080808,
+            "HNL":28.882985,
+            "HRK":7.564181,
+            "HTG":77.250551,
+            "HUF":358.635938,
+            "IDR":17402.00064,
+            "ILS":4.019043,
+            "IMP":0.905932,
+            "INR":85.912466,
+            "IQD":1393.743165,
+            "IRR":49334.641838,
+            "ISK":162.269886,
+            "JEP":0.905932,
+            "JMD":165.806038,
+            "JOD":0.830785,
+            "JPY":123.421599,
+            "KES":127.109998,
+            "KGS":93.136613,
+            "KHR":4803.991145,
+            "KMF":492.706425,
+            "KPW":1054.534551,
+            "KRW":1366.618643,
+            "KWD":0.358835,
+            "KYD":0.976613,
+            "KZT":507.649981,
+            "LAK":10820.69661,
+            "LBP":1771.795916,
+            "LKR":216.276894,
+            "LRD":232.759657,
+            "LSL":19.509336,
+            "LTL":3.459741,
+            "LVL":0.708753,
+            "LYD":1.61114,
+            "MAD":10.837146,
+            "MDL":19.804926,
+            "MGA":4569.650129,
+            "MKD":61.64657,
+            "MMK":1527.591608,
+            "MNT":3348.207676,
+            "MOP":9.35483,
+            "MRO":418.29911,
+            "MUR":46.680002,
+            "MVR":18.056418,
+            "MWK":878.779197,
+            "MXN":25.344391,
+            "MYR":4.87957,
+            "MZN":84.802199,
+            "NAD":19.509331,
+            "NGN":448.181551,
+            "NIO":40.600022,
+            "NOK":10.932653,
+            "NPR":137.56797,
+            "NZD":1.767006,
+            "OMR":0.45102,
+            "PAB":1.171915,
+            "PEN":4.247476,
+            "PGK":4.105313,
+            "PHP":56.806002,
+            "PKR":192.866992,
+            "PLN":4.503507,
+            "PYG":8186.296697,
+            "QAR":4.266223,
+            "RON":4.869962,
+            "RSD":117.621657,
+            "RUB":91.618669,
+            "RWF":1118.978329,
+            "SAR":4.394932,
+            "SBD":9.568924,
+            "SCR":21.064001,
+            "SDG":64.824627,
+            "SEK":10.465908,
+            "SGD":1.598118,
+            "SHP":0.905932,
+            "SLL":11500.285531,
+            "SOS":683.104445,
+            "SRD":16.584358,
+            "STD":24645.423926,
+            "SVC":10.254383,
+            "SYP":599.974643,
+            "SZL":19.509322,
+            "THB":36.991162,
+            "TJS":12.093893,
+            "TMT":4.100968,
+            "TND":3.240355,
+            "TOP":2.698613,
+            "TRY":9.107082,
+            "TTD":7.954475,
+            "TWD":33.902158,
+            "TZS":2718.356125,
+            "UAH":33.225357,
+            "UGX":4341.767857,
+            "USD":1.171705,
+            "UYU":49.917203,
+            "UZS":12097.855105,
+            "VEF":11.702409,
+            "VND":27174.183682,
+            "VUV":131.947783,
+            "WST":3.107134,
+            "XAF":656.309919,
+            "XAG":0.049413,
+            "XAU":0.000617,
+            "XCD":3.166592,
+            "XDR":0.830847,
+            "XOF":655.5732,
+            "XPF":119.889288,
+            "YER":293.336787,
+            "ZAR":19.322659,
+            "ZMK":10546.755769,
+            "ZMW":23.491931,
+            "ZWL":377.289416
+          }
+        }
+  recorded_at: Sun, 04 Oct 2020 12:18:03 GMT
+- request:
+    method: get
+    uri: http://data.fixer.io/api/symbols?access_key=c9aae6d7b9d240dfc732423049794d70
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 04 Oct 2020 12:18:03 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da968025b1de15138190b1dee01b037f41601813883; expires=Tue, 03-Nov-20
+        12:18:03 GMT; path=/; domain=.fixer.io; HttpOnly; SameSite=Lax
+      X-Apilayer-Transaction-Id:
+      - 5c0a95e1-accc-47b3-8a56-b02162bb5215
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.014'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '059525428400002d7fd4989200000001'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=132&lkg-time=1601813884"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5dced7e40c442d7f-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"symbols":{"AED":"United Arab Emirates Dirham","AFN":"Afghan
+        Afghani","ALL":"Albanian Lek","AMD":"Armenian Dram","ANG":"Netherlands Antillean
+        Guilder","AOA":"Angolan Kwanza","ARS":"Argentine Peso","AUD":"Australian Dollar","AWG":"Aruban
+        Florin","AZN":"Azerbaijani Manat","BAM":"Bosnia-Herzegovina Convertible Mark","BBD":"Barbadian
+        Dollar","BDT":"Bangladeshi Taka","BGN":"Bulgarian Lev","BHD":"Bahraini Dinar","BIF":"Burundian
+        Franc","BMD":"Bermudan Dollar","BND":"Brunei Dollar","BOB":"Bolivian Boliviano","BRL":"Brazilian
+        Real","BSD":"Bahamian Dollar","BTC":"Bitcoin","BTN":"Bhutanese Ngultrum","BWP":"Botswanan
+        Pula","BYN":"New Belarusian Ruble","BYR":"Belarusian Ruble","BZD":"Belize
+        Dollar","CAD":"Canadian Dollar","CDF":"Congolese Franc","CHF":"Swiss Franc","CLF":"Chilean
+        Unit of Account (UF)","CLP":"Chilean Peso","CNY":"Chinese Yuan","COP":"Colombian
+        Peso","CRC":"Costa Rican Col\u00f3n","CUC":"Cuban Convertible Peso","CUP":"Cuban
+        Peso","CVE":"Cape Verdean Escudo","CZK":"Czech Republic Koruna","DJF":"Djiboutian
+        Franc","DKK":"Danish Krone","DOP":"Dominican Peso","DZD":"Algerian Dinar","EGP":"Egyptian
+        Pound","ERN":"Eritrean Nakfa","ETB":"Ethiopian Birr","EUR":"Euro","FJD":"Fijian
+        Dollar","FKP":"Falkland Islands Pound","GBP":"British Pound Sterling","GEL":"Georgian
+        Lari","GGP":"Guernsey Pound","GHS":"Ghanaian Cedi","GIP":"Gibraltar Pound","GMD":"Gambian
+        Dalasi","GNF":"Guinean Franc","GTQ":"Guatemalan Quetzal","GYD":"Guyanaese
+        Dollar","HKD":"Hong Kong Dollar","HNL":"Honduran Lempira","HRK":"Croatian
+        Kuna","HTG":"Haitian Gourde","HUF":"Hungarian Forint","IDR":"Indonesian Rupiah","ILS":"Israeli
+        New Sheqel","IMP":"Manx pound","INR":"Indian Rupee","IQD":"Iraqi Dinar","IRR":"Iranian
+        Rial","ISK":"Icelandic Kr\u00f3na","JEP":"Jersey Pound","JMD":"Jamaican Dollar","JOD":"Jordanian
+        Dinar","JPY":"Japanese Yen","KES":"Kenyan Shilling","KGS":"Kyrgystani Som","KHR":"Cambodian
+        Riel","KMF":"Comorian Franc","KPW":"North Korean Won","KRW":"South Korean
+        Won","KWD":"Kuwaiti Dinar","KYD":"Cayman Islands Dollar","KZT":"Kazakhstani
+        Tenge","LAK":"Laotian Kip","LBP":"Lebanese Pound","LKR":"Sri Lankan Rupee","LRD":"Liberian
+        Dollar","LSL":"Lesotho Loti","LTL":"Lithuanian Litas","LVL":"Latvian Lats","LYD":"Libyan
+        Dinar","MAD":"Moroccan Dirham","MDL":"Moldovan Leu","MGA":"Malagasy Ariary","MKD":"Macedonian
+        Denar","MMK":"Myanma Kyat","MNT":"Mongolian Tugrik","MOP":"Macanese Pataca","MRO":"Mauritanian
+        Ouguiya","MUR":"Mauritian Rupee","MVR":"Maldivian Rufiyaa","MWK":"Malawian
+        Kwacha","MXN":"Mexican Peso","MYR":"Malaysian Ringgit","MZN":"Mozambican Metical","NAD":"Namibian
+        Dollar","NGN":"Nigerian Naira","NIO":"Nicaraguan C\u00f3rdoba","NOK":"Norwegian
+        Krone","NPR":"Nepalese Rupee","NZD":"New Zealand Dollar","OMR":"Omani Rial","PAB":"Panamanian
+        Balboa","PEN":"Peruvian Nuevo Sol","PGK":"Papua New Guinean Kina","PHP":"Philippine
+        Peso","PKR":"Pakistani Rupee","PLN":"Polish Zloty","PYG":"Paraguayan Guarani","QAR":"Qatari
+        Rial","RON":"Romanian Leu","RSD":"Serbian Dinar","RUB":"Russian Ruble","RWF":"Rwandan
+        Franc","SAR":"Saudi Riyal","SBD":"Solomon Islands Dollar","SCR":"Seychellois
+        Rupee","SDG":"Sudanese Pound","SEK":"Swedish Krona","SGD":"Singapore Dollar","SHP":"Saint
+        Helena Pound","SLL":"Sierra Leonean Leone","SOS":"Somali Shilling","SRD":"Surinamese
+        Dollar","STD":"S\u00e3o Tom\u00e9 and Pr\u00edncipe Dobra","SVC":"Salvadoran
+        Col\u00f3n","SYP":"Syrian Pound","SZL":"Swazi Lilangeni","THB":"Thai Baht","TJS":"Tajikistani
+        Somoni","TMT":"Turkmenistani Manat","TND":"Tunisian Dinar","TOP":"Tongan Pa\u02bbanga","TRY":"Turkish
+        Lira","TTD":"Trinidad and Tobago Dollar","TWD":"New Taiwan Dollar","TZS":"Tanzanian
+        Shilling","UAH":"Ukrainian Hryvnia","UGX":"Ugandan Shilling","USD":"United
+        States Dollar","UYU":"Uruguayan Peso","UZS":"Uzbekistan Som","VEF":"Venezuelan
+        Bol\u00edvar Fuerte","VND":"Vietnamese Dong","VUV":"Vanuatu Vatu","WST":"Samoan
+        Tala","XAF":"CFA Franc BEAC","XAG":"Silver (troy ounce)","XAU":"Gold (troy
+        ounce)","XCD":"East Caribbean Dollar","XDR":"Special Drawing Rights","XOF":"CFA
+        Franc BCEAO","XPF":"CFP Franc","YER":"Yemeni Rial","ZAR":"South African Rand","ZMK":"Zambian
+        Kwacha (pre-2013)","ZMW":"Zambian Kwacha","ZWL":"Zimbabwean Dollar"}}'
+  recorded_at: Sun, 04 Oct 2020 12:18:04 GMT
+- request:
+    method: get
+    uri: http://data.fixer.io/api/latest?access_key=broken_key&format=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 04 Oct 2020 12:18:18 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3ba21da83536d0397a276036b74484441601813898; expires=Tue, 03-Nov-20
+        12:18:18 GMT; path=/; domain=.fixer.io; HttpOnly; SameSite=Lax
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Blocked-At-Loadbalancer:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0595257b6900003278f01ef200000001'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=132&lkg-time=1601813898"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5dced83f0a8d3278-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "success": false,
+          "error": {
+            "code": 101,
+            "type": "invalid_access_key",
+            "info": "You have not supplied a valid API Access Key. [Technical Support: support@apilayer.com]"
+          }
+        }
+  recorded_at: Sun, 04 Oct 2020 12:18:18 GMT
+- request:
+    method: get
+    uri: http://data.fixer.io/api/symbols?access_key=broken_key
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 04 Oct 2020 12:18:19 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d76972c73dc156a3a5f8d02d06e4e52621601813898; expires=Tue, 03-Nov-20
+        12:18:18 GMT; path=/; domain=.fixer.io; HttpOnly; SameSite=Lax
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Blocked-At-Loadbalancer:
+      - '1'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0595257ded00008af66c9e9200000001'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=132&lkg-time=1601813899"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5dced8431e038af6-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "success": false,
+          "error": {
+            "code": 101,
+            "type": "invalid_access_key",
+            "info": "You have not supplied a valid API Access Key. [Technical Support: support@apilayer.com]"
+          }
+        }
+  recorded_at: Sun, 04 Oct 2020 12:18:19 GMT
+recorded_with: VCR 6.0.0
