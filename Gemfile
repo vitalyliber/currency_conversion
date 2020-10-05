@@ -60,3 +60,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'faraday'
 gem 'prettier'
 gem 'blueprinter'
+gem 'rack-cors'

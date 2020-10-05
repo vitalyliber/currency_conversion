@@ -1,5 +1,5 @@
 class RateSerializer < Blueprinter::Base
-  fields :from, :to, :value
+  fields :from, :to, :value, :id
 
   field :from_long do |object, options|
     object.from_currency_symbol.long
