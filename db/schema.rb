@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_04_123817) do
+ActiveRecord::Schema.define(version: 2020_10_05_084842) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,10 +26,12 @@ ActiveRecord::Schema.define(version: 2020_10_04_123817) do
     t.string "from"
     t.string "to"
     t.float "value"
-    t.bigint "currency_symbol_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["currency_symbol_id"], name: "index_rates_on_currency_symbol_id"
+    t.bigint "to_currency_symbol_id"
+    t.bigint "from_currency_symbol_id"
+    t.index ["from_currency_symbol_id"], name: "index_rates_on_from_currency_symbol_id"
+    t.index ["to_currency_symbol_id"], name: "index_rates_on_to_currency_symbol_id"
   end
 
 end

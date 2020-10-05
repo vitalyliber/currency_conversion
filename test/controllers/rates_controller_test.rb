@@ -9,29 +9,27 @@ class RatesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     json = JSON.parse(body)
     assert_equal json['rates'].count, 168
-    assert_equal json['symbols'].count, 168
     assert_equal Rate.count, 168
     assert_equal CurrencySymbol.count, 168
     assert_equal json['rates'][0]['to'], 'AED'
+    assert_equal json['rates'][0]['from'], 'EUR'
+    assert_equal json['rates'][0]['from_long'], 'Euro'
+    assert_equal json['rates'][0]['to_long'], 'United Arab Emirates Dirham'
     # getting cached data from DB
     get rates_path
     assert_response :success
     json = JSON.parse(body)
     assert_equal json['rates'].count, 168
-    assert_equal json['symbols'].count, 168
     assert_equal Rate.count, 168
     assert_equal CurrencySymbol.count, 168
-    assert_equal json['rates'][0]['to'], 'AED'
-    # getting fresh data after 12 hours (see data in cassettes)
+    # getting fresh data after 12 hours
     Timecop.freeze(Time.now + 12.hours + 10.minutes) do
       get rates_path
       assert_response :success
       json = JSON.parse(body)
       assert_equal json['rates'].count, 168
-      assert_equal json['symbols'].count, 168
       assert_equal Rate.count, 168
       assert_equal CurrencySymbol.count, 168
-      assert_equal json['rates'][0]['to'], 'AED'
     end
   end
 
