@@ -1,0 +1,667 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.fixer.io/api/latest?access_key=c9aae6d7b9d240dfc732423049794d70&format=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 05 Oct 2020 09:47:13 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8012454d1c62f89de3caff5a9f55e5271601891232; expires=Wed, 04-Nov-20
+        09:47:12 GMT; path=/; domain=.fixer.io; HttpOnly; SameSite=Lax
+      X-Apilayer-Transaction-Id:
+      - 3c97017e-c9ab-485a-8c39-94260a364ac9
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Last-Modified:
+      - Mon, 05 Oct 2020 09:34:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.025'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0599c18457000023191c982200000001'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=132&lkg-time=1601891233"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5dd6384d5a842319-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "success":true,
+          "timestamp":1601890445,
+          "base":"EUR",
+          "date":"2020-10-05",
+          "rates":{
+            "AED":4.316672,
+            "AFN":90.197135,
+            "ALL":124.265902,
+            "AMD":574.232801,
+            "ANG":2.107348,
+            "AOA":741.011753,
+            "ARS":90.345653,
+            "AUD":1.63647,
+            "AWG":2.115457,
+            "AZN":1.987992,
+            "BAM":1.960315,
+            "BBD":2.370323,
+            "BDT":99.529215,
+            "BGN":1.958889,
+            "BHD":0.44313,
+            "BIF":2269.24054,
+            "BMD":1.175254,
+            "BND":1.601291,
+            "BOB":8.106247,
+            "BRL":6.679322,
+            "BSD":1.173986,
+            "BTC":0.00011,
+            "BTN":86.130767,
+            "BWP":13.509682,
+            "BYN":3.078243,
+            "BYR":23034.977827,
+            "BZD":2.366414,
+            "CAD":1.559738,
+            "CDF":2309.374069,
+            "CHF":1.076245,
+            "CLF":0.033631,
+            "CLP":927.985612,
+            "CNY":7.980912,
+            "COP":4550.583375,
+            "CRC":708.520132,
+            "CUC":1.175254,
+            "CUP":31.14423,
+            "CVE":110.517863,
+            "CZK":27.100536,
+            "DJF":208.998187,
+            "DKK":7.439792,
+            "DOP":68.501606,
+            "DZD":151.639247,
+            "EGP":18.481223,
+            "ERN":17.629036,
+            "ETB":43.396744,
+            "EUR":1,
+            "FJD":2.491075,
+            "FKP":0.907763,
+            "GBP":0.907843,
+            "GEL":3.772315,
+            "GGP":0.907763,
+            "GHS":6.809079,
+            "GIP":0.907763,
+            "GMD":60.851915,
+            "GNF":11497.509626,
+            "GTQ":9.139411,
+            "GYD":245.481655,
+            "HKD":9.108748,
+            "HNL":28.906507,
+            "HRK":7.567574,
+            "HTG":77.38772,
+            "HUF":358.040961,
+            "IDR":17315.780667,
+            "ILS":4.021284,
+            "IMP":0.907763,
+            "INR":86.09617,
+            "IQD":1401.496589,
+            "IRR":49484.068173,
+            "ISK":162.196538,
+            "JEP":0.907763,
+            "JMD":166.101159,
+            "JOD":0.833254,
+            "JPY":124.155001,
+            "KES":127.573469,
+            "KGS":93.418706,
+            "KHR":4822.675241,
+            "KMF":494.195366,
+            "KPW":1057.769359,
+            "KRW":1363.811759,
+            "KWD":0.359867,
+            "KYD":0.978338,
+            "KZT":508.553559,
+            "LAK":10827.67402,
+            "LBP":1775.26167,
+            "LKR":216.656306,
+            "LRD":233.464332,
+            "LSL":19.56822,
+            "LTL":3.470219,
+            "LVL":0.7109,
+            "LYD":1.607979,
+            "MAD":10.864558,
+            "MDL":19.840093,
+            "MGA":4572.680623,
+            "MKD":61.748398,
+            "MMK":1530.271393,
+            "MNT":3343.989436,
+            "MOP":9.371441,
+            "MRO":419.566074,
+            "MUR":46.833706,
+            "MVR":18.111119,
+            "MWK":882.0985,
+            "MXN":25.284057,
+            "MYR":4.886708,
+            "MZN":85.058997,
+            "NAD":19.568292,
+            "NGN":450.803622,
+            "NIO":40.890252,
+            "NOK":10.889086,
+            "NPR":137.811068,
+            "NZD":1.768387,
+            "OMR":0.452464,
+            "PAB":1.173986,
+            "PEN":4.233987,
+            "PGK":4.160054,
+            "PHP":56.881129,
+            "PKR":193.23809,
+            "PLN":4.492596,
+            "PYG":8200.763504,
+            "QAR":4.279091,
+            "RON":4.869423,
+            "RSD":117.566551,
+            "RUB":92.158727,
+            "RWF":1145.645798,
+            "SAR":4.40809,
+            "SBD":9.597907,
+            "SCR":21.131545,
+            "SDG":65.020895,
+            "SEK":10.466095,
+            "SGD":1.599709,
+            "SHP":0.907763,
+            "SLL":11535.117426,
+            "SOS":685.17287,
+            "SRD":16.634504,
+            "STD":24720.071111,
+            "SVC":10.272502,
+            "SYP":601.698355,
+            "SZL":19.512793,
+            "THB":36.915236,
+            "TJS":12.115419,
+            "TMT":4.113389,
+            "TND":3.250162,
+            "TOP":2.711784,
+            "TRY":9.116692,
+            "TTD":7.968531,
+            "TWD":33.851972,
+            "TZS":2726.58922,
+            "UAH":33.28478,
+            "UGX":4349.551719,
+            "USD":1.175254,
+            "UYU":50.005418,
+            "UZS":12054.32972,
+            "VEF":11.737852,
+            "VND":27270.593138,
+            "VUV":133.3875,
+            "WST":3.073149,
+            "XAF":657.469673,
+            "XAG":0.04906,
+            "XAU":0.000619,
+            "XCD":3.176183,
+            "XDR":0.832315,
+            "XOF":657.46127,
+            "XPF":120.251938,
+            "YER":294.224822,
+            "ZAR":19.281122,
+            "ZMK":10578.698494,
+            "ZMW":23.533444,
+            "ZWL":378.432168
+          }
+        }
+  recorded_at: Mon, 05 Oct 2020 09:47:13 GMT
+- request:
+    method: get
+    uri: http://data.fixer.io/api/symbols?access_key=c9aae6d7b9d240dfc732423049794d70
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 05 Oct 2020 09:47:14 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d792d011e16af0f897b660c5eead45dbd1601891233; expires=Wed, 04-Nov-20
+        09:47:13 GMT; path=/; domain=.fixer.io; HttpOnly; SameSite=Lax
+      X-Apilayer-Transaction-Id:
+      - caf5cf0f-138a-49de-80c1-ba91693782da
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.017'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0599c1879b00008af66ab69200000001'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=132&lkg-time=1601891234"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5dd638529cd28af6-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"symbols":{"AED":"United Arab Emirates Dirham","AFN":"Afghan
+        Afghani","ALL":"Albanian Lek","AMD":"Armenian Dram","ANG":"Netherlands Antillean
+        Guilder","AOA":"Angolan Kwanza","ARS":"Argentine Peso","AUD":"Australian Dollar","AWG":"Aruban
+        Florin","AZN":"Azerbaijani Manat","BAM":"Bosnia-Herzegovina Convertible Mark","BBD":"Barbadian
+        Dollar","BDT":"Bangladeshi Taka","BGN":"Bulgarian Lev","BHD":"Bahraini Dinar","BIF":"Burundian
+        Franc","BMD":"Bermudan Dollar","BND":"Brunei Dollar","BOB":"Bolivian Boliviano","BRL":"Brazilian
+        Real","BSD":"Bahamian Dollar","BTC":"Bitcoin","BTN":"Bhutanese Ngultrum","BWP":"Botswanan
+        Pula","BYN":"New Belarusian Ruble","BYR":"Belarusian Ruble","BZD":"Belize
+        Dollar","CAD":"Canadian Dollar","CDF":"Congolese Franc","CHF":"Swiss Franc","CLF":"Chilean
+        Unit of Account (UF)","CLP":"Chilean Peso","CNY":"Chinese Yuan","COP":"Colombian
+        Peso","CRC":"Costa Rican Col\u00f3n","CUC":"Cuban Convertible Peso","CUP":"Cuban
+        Peso","CVE":"Cape Verdean Escudo","CZK":"Czech Republic Koruna","DJF":"Djiboutian
+        Franc","DKK":"Danish Krone","DOP":"Dominican Peso","DZD":"Algerian Dinar","EGP":"Egyptian
+        Pound","ERN":"Eritrean Nakfa","ETB":"Ethiopian Birr","EUR":"Euro","FJD":"Fijian
+        Dollar","FKP":"Falkland Islands Pound","GBP":"British Pound Sterling","GEL":"Georgian
+        Lari","GGP":"Guernsey Pound","GHS":"Ghanaian Cedi","GIP":"Gibraltar Pound","GMD":"Gambian
+        Dalasi","GNF":"Guinean Franc","GTQ":"Guatemalan Quetzal","GYD":"Guyanaese
+        Dollar","HKD":"Hong Kong Dollar","HNL":"Honduran Lempira","HRK":"Croatian
+        Kuna","HTG":"Haitian Gourde","HUF":"Hungarian Forint","IDR":"Indonesian Rupiah","ILS":"Israeli
+        New Sheqel","IMP":"Manx pound","INR":"Indian Rupee","IQD":"Iraqi Dinar","IRR":"Iranian
+        Rial","ISK":"Icelandic Kr\u00f3na","JEP":"Jersey Pound","JMD":"Jamaican Dollar","JOD":"Jordanian
+        Dinar","JPY":"Japanese Yen","KES":"Kenyan Shilling","KGS":"Kyrgystani Som","KHR":"Cambodian
+        Riel","KMF":"Comorian Franc","KPW":"North Korean Won","KRW":"South Korean
+        Won","KWD":"Kuwaiti Dinar","KYD":"Cayman Islands Dollar","KZT":"Kazakhstani
+        Tenge","LAK":"Laotian Kip","LBP":"Lebanese Pound","LKR":"Sri Lankan Rupee","LRD":"Liberian
+        Dollar","LSL":"Lesotho Loti","LTL":"Lithuanian Litas","LVL":"Latvian Lats","LYD":"Libyan
+        Dinar","MAD":"Moroccan Dirham","MDL":"Moldovan Leu","MGA":"Malagasy Ariary","MKD":"Macedonian
+        Denar","MMK":"Myanma Kyat","MNT":"Mongolian Tugrik","MOP":"Macanese Pataca","MRO":"Mauritanian
+        Ouguiya","MUR":"Mauritian Rupee","MVR":"Maldivian Rufiyaa","MWK":"Malawian
+        Kwacha","MXN":"Mexican Peso","MYR":"Malaysian Ringgit","MZN":"Mozambican Metical","NAD":"Namibian
+        Dollar","NGN":"Nigerian Naira","NIO":"Nicaraguan C\u00f3rdoba","NOK":"Norwegian
+        Krone","NPR":"Nepalese Rupee","NZD":"New Zealand Dollar","OMR":"Omani Rial","PAB":"Panamanian
+        Balboa","PEN":"Peruvian Nuevo Sol","PGK":"Papua New Guinean Kina","PHP":"Philippine
+        Peso","PKR":"Pakistani Rupee","PLN":"Polish Zloty","PYG":"Paraguayan Guarani","QAR":"Qatari
+        Rial","RON":"Romanian Leu","RSD":"Serbian Dinar","RUB":"Russian Ruble","RWF":"Rwandan
+        Franc","SAR":"Saudi Riyal","SBD":"Solomon Islands Dollar","SCR":"Seychellois
+        Rupee","SDG":"Sudanese Pound","SEK":"Swedish Krona","SGD":"Singapore Dollar","SHP":"Saint
+        Helena Pound","SLL":"Sierra Leonean Leone","SOS":"Somali Shilling","SRD":"Surinamese
+        Dollar","STD":"S\u00e3o Tom\u00e9 and Pr\u00edncipe Dobra","SVC":"Salvadoran
+        Col\u00f3n","SYP":"Syrian Pound","SZL":"Swazi Lilangeni","THB":"Thai Baht","TJS":"Tajikistani
+        Somoni","TMT":"Turkmenistani Manat","TND":"Tunisian Dinar","TOP":"Tongan Pa\u02bbanga","TRY":"Turkish
+        Lira","TTD":"Trinidad and Tobago Dollar","TWD":"New Taiwan Dollar","TZS":"Tanzanian
+        Shilling","UAH":"Ukrainian Hryvnia","UGX":"Ugandan Shilling","USD":"United
+        States Dollar","UYU":"Uruguayan Peso","UZS":"Uzbekistan Som","VEF":"Venezuelan
+        Bol\u00edvar Fuerte","VND":"Vietnamese Dong","VUV":"Vanuatu Vatu","WST":"Samoan
+        Tala","XAF":"CFA Franc BEAC","XAG":"Silver (troy ounce)","XAU":"Gold (troy
+        ounce)","XCD":"East Caribbean Dollar","XDR":"Special Drawing Rights","XOF":"CFA
+        Franc BCEAO","XPF":"CFP Franc","YER":"Yemeni Rial","ZAR":"South African Rand","ZMK":"Zambian
+        Kwacha (pre-2013)","ZMW":"Zambian Kwacha","ZWL":"Zimbabwean Dollar"}}'
+  recorded_at: Mon, 05 Oct 2020 09:47:14 GMT
+- request:
+    method: get
+    uri: http://data.fixer.io/api/latest?access_key=c9aae6d7b9d240dfc732423049794d70&format=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 05 Oct 2020 09:47:20 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc1f9364bc8dd71eea1d4cc2c83ea49e11601891239; expires=Wed, 04-Nov-20
+        09:47:19 GMT; path=/; domain=.fixer.io; HttpOnly; SameSite=Lax
+      X-Apilayer-Transaction-Id:
+      - ef1b32c6-467e-42f1-a16b-422f5ee54b6e
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Last-Modified:
+      - Mon, 05 Oct 2020 09:34:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.018'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0599c19fe000008ac661112200000001'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=132&lkg-time=1601891240"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5dd638796d7a8ac6-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "success":true,
+          "timestamp":1601890445,
+          "base":"EUR",
+          "date":"2020-10-05",
+          "rates":{
+            "AED":4.316672,
+            "AFN":90.197135,
+            "ALL":124.265902,
+            "AMD":574.232801,
+            "ANG":2.107348,
+            "AOA":741.011753,
+            "ARS":90.345653,
+            "AUD":1.63647,
+            "AWG":2.115457,
+            "AZN":1.987992,
+            "BAM":1.960315,
+            "BBD":2.370323,
+            "BDT":99.529215,
+            "BGN":1.958889,
+            "BHD":0.44313,
+            "BIF":2269.24054,
+            "BMD":1.175254,
+            "BND":1.601291,
+            "BOB":8.106247,
+            "BRL":6.679322,
+            "BSD":1.173986,
+            "BTC":0.00011,
+            "BTN":86.130767,
+            "BWP":13.509682,
+            "BYN":3.078243,
+            "BYR":23034.977827,
+            "BZD":2.366414,
+            "CAD":1.559738,
+            "CDF":2309.374069,
+            "CHF":1.076245,
+            "CLF":0.033631,
+            "CLP":927.985612,
+            "CNY":7.980912,
+            "COP":4550.583375,
+            "CRC":708.520132,
+            "CUC":1.175254,
+            "CUP":31.14423,
+            "CVE":110.517863,
+            "CZK":27.100536,
+            "DJF":208.998187,
+            "DKK":7.439792,
+            "DOP":68.501606,
+            "DZD":151.639247,
+            "EGP":18.481223,
+            "ERN":17.629036,
+            "ETB":43.396744,
+            "EUR":1,
+            "FJD":2.491075,
+            "FKP":0.907763,
+            "GBP":0.907843,
+            "GEL":3.772315,
+            "GGP":0.907763,
+            "GHS":6.809079,
+            "GIP":0.907763,
+            "GMD":60.851915,
+            "GNF":11497.509626,
+            "GTQ":9.139411,
+            "GYD":245.481655,
+            "HKD":9.108748,
+            "HNL":28.906507,
+            "HRK":7.567574,
+            "HTG":77.38772,
+            "HUF":358.040961,
+            "IDR":17315.780667,
+            "ILS":4.021284,
+            "IMP":0.907763,
+            "INR":86.09617,
+            "IQD":1401.496589,
+            "IRR":49484.068173,
+            "ISK":162.196538,
+            "JEP":0.907763,
+            "JMD":166.101159,
+            "JOD":0.833254,
+            "JPY":124.155001,
+            "KES":127.573469,
+            "KGS":93.418706,
+            "KHR":4822.675241,
+            "KMF":494.195366,
+            "KPW":1057.769359,
+            "KRW":1363.811759,
+            "KWD":0.359867,
+            "KYD":0.978338,
+            "KZT":508.553559,
+            "LAK":10827.67402,
+            "LBP":1775.26167,
+            "LKR":216.656306,
+            "LRD":233.464332,
+            "LSL":19.56822,
+            "LTL":3.470219,
+            "LVL":0.7109,
+            "LYD":1.607979,
+            "MAD":10.864558,
+            "MDL":19.840093,
+            "MGA":4572.680623,
+            "MKD":61.748398,
+            "MMK":1530.271393,
+            "MNT":3343.989436,
+            "MOP":9.371441,
+            "MRO":419.566074,
+            "MUR":46.833706,
+            "MVR":18.111119,
+            "MWK":882.0985,
+            "MXN":25.284057,
+            "MYR":4.886708,
+            "MZN":85.058997,
+            "NAD":19.568292,
+            "NGN":450.803622,
+            "NIO":40.890252,
+            "NOK":10.889086,
+            "NPR":137.811068,
+            "NZD":1.768387,
+            "OMR":0.452464,
+            "PAB":1.173986,
+            "PEN":4.233987,
+            "PGK":4.160054,
+            "PHP":56.881129,
+            "PKR":193.23809,
+            "PLN":4.492596,
+            "PYG":8200.763504,
+            "QAR":4.279091,
+            "RON":4.869423,
+            "RSD":117.566551,
+            "RUB":92.158727,
+            "RWF":1145.645798,
+            "SAR":4.40809,
+            "SBD":9.597907,
+            "SCR":21.131545,
+            "SDG":65.020895,
+            "SEK":10.466095,
+            "SGD":1.599709,
+            "SHP":0.907763,
+            "SLL":11535.117426,
+            "SOS":685.17287,
+            "SRD":16.634504,
+            "STD":24720.071111,
+            "SVC":10.272502,
+            "SYP":601.698355,
+            "SZL":19.512793,
+            "THB":36.915236,
+            "TJS":12.115419,
+            "TMT":4.113389,
+            "TND":3.250162,
+            "TOP":2.711784,
+            "TRY":9.116692,
+            "TTD":7.968531,
+            "TWD":33.851972,
+            "TZS":2726.58922,
+            "UAH":33.28478,
+            "UGX":4349.551719,
+            "USD":1.175254,
+            "UYU":50.005418,
+            "UZS":12054.32972,
+            "VEF":11.737852,
+            "VND":27270.593138,
+            "VUV":133.3875,
+            "WST":3.073149,
+            "XAF":657.469673,
+            "XAG":0.04906,
+            "XAU":0.000619,
+            "XCD":3.176183,
+            "XDR":0.832315,
+            "XOF":657.46127,
+            "XPF":120.251938,
+            "YER":294.224822,
+            "ZAR":19.281122,
+            "ZMK":10578.698494,
+            "ZMW":23.533444,
+            "ZWL":378.432168
+          }
+        }
+  recorded_at: Mon, 05 Oct 2020 09:47:20 GMT
+- request:
+    method: get
+    uri: http://data.fixer.io/api/symbols?access_key=c9aae6d7b9d240dfc732423049794d70
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 05 Oct 2020 09:47:21 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d02b6751a17daba94b2efb04fa813af891601891241; expires=Wed, 04-Nov-20
+        09:47:21 GMT; path=/; domain=.fixer.io; HttpOnly; SameSite=Lax
+      X-Apilayer-Transaction-Id:
+      - 40a0462c-69a0-4e17-aa30-bcb38b4cd05c
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.021'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '0599c1a4f70000351f9ca19200000001'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=132&lkg-time=1601891242"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5dd638818d70351f-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"symbols":{"AED":"United Arab Emirates Dirham","AFN":"Afghan
+        Afghani","ALL":"Albanian Lek","AMD":"Armenian Dram","ANG":"Netherlands Antillean
+        Guilder","AOA":"Angolan Kwanza","ARS":"Argentine Peso","AUD":"Australian Dollar","AWG":"Aruban
+        Florin","AZN":"Azerbaijani Manat","BAM":"Bosnia-Herzegovina Convertible Mark","BBD":"Barbadian
+        Dollar","BDT":"Bangladeshi Taka","BGN":"Bulgarian Lev","BHD":"Bahraini Dinar","BIF":"Burundian
+        Franc","BMD":"Bermudan Dollar","BND":"Brunei Dollar","BOB":"Bolivian Boliviano","BRL":"Brazilian
+        Real","BSD":"Bahamian Dollar","BTC":"Bitcoin","BTN":"Bhutanese Ngultrum","BWP":"Botswanan
+        Pula","BYN":"New Belarusian Ruble","BYR":"Belarusian Ruble","BZD":"Belize
+        Dollar","CAD":"Canadian Dollar","CDF":"Congolese Franc","CHF":"Swiss Franc","CLF":"Chilean
+        Unit of Account (UF)","CLP":"Chilean Peso","CNY":"Chinese Yuan","COP":"Colombian
+        Peso","CRC":"Costa Rican Col\u00f3n","CUC":"Cuban Convertible Peso","CUP":"Cuban
+        Peso","CVE":"Cape Verdean Escudo","CZK":"Czech Republic Koruna","DJF":"Djiboutian
+        Franc","DKK":"Danish Krone","DOP":"Dominican Peso","DZD":"Algerian Dinar","EGP":"Egyptian
+        Pound","ERN":"Eritrean Nakfa","ETB":"Ethiopian Birr","EUR":"Euro","FJD":"Fijian
+        Dollar","FKP":"Falkland Islands Pound","GBP":"British Pound Sterling","GEL":"Georgian
+        Lari","GGP":"Guernsey Pound","GHS":"Ghanaian Cedi","GIP":"Gibraltar Pound","GMD":"Gambian
+        Dalasi","GNF":"Guinean Franc","GTQ":"Guatemalan Quetzal","GYD":"Guyanaese
+        Dollar","HKD":"Hong Kong Dollar","HNL":"Honduran Lempira","HRK":"Croatian
+        Kuna","HTG":"Haitian Gourde","HUF":"Hungarian Forint","IDR":"Indonesian Rupiah","ILS":"Israeli
+        New Sheqel","IMP":"Manx pound","INR":"Indian Rupee","IQD":"Iraqi Dinar","IRR":"Iranian
+        Rial","ISK":"Icelandic Kr\u00f3na","JEP":"Jersey Pound","JMD":"Jamaican Dollar","JOD":"Jordanian
+        Dinar","JPY":"Japanese Yen","KES":"Kenyan Shilling","KGS":"Kyrgystani Som","KHR":"Cambodian
+        Riel","KMF":"Comorian Franc","KPW":"North Korean Won","KRW":"South Korean
+        Won","KWD":"Kuwaiti Dinar","KYD":"Cayman Islands Dollar","KZT":"Kazakhstani
+        Tenge","LAK":"Laotian Kip","LBP":"Lebanese Pound","LKR":"Sri Lankan Rupee","LRD":"Liberian
+        Dollar","LSL":"Lesotho Loti","LTL":"Lithuanian Litas","LVL":"Latvian Lats","LYD":"Libyan
+        Dinar","MAD":"Moroccan Dirham","MDL":"Moldovan Leu","MGA":"Malagasy Ariary","MKD":"Macedonian
+        Denar","MMK":"Myanma Kyat","MNT":"Mongolian Tugrik","MOP":"Macanese Pataca","MRO":"Mauritanian
+        Ouguiya","MUR":"Mauritian Rupee","MVR":"Maldivian Rufiyaa","MWK":"Malawian
+        Kwacha","MXN":"Mexican Peso","MYR":"Malaysian Ringgit","MZN":"Mozambican Metical","NAD":"Namibian
+        Dollar","NGN":"Nigerian Naira","NIO":"Nicaraguan C\u00f3rdoba","NOK":"Norwegian
+        Krone","NPR":"Nepalese Rupee","NZD":"New Zealand Dollar","OMR":"Omani Rial","PAB":"Panamanian
+        Balboa","PEN":"Peruvian Nuevo Sol","PGK":"Papua New Guinean Kina","PHP":"Philippine
+        Peso","PKR":"Pakistani Rupee","PLN":"Polish Zloty","PYG":"Paraguayan Guarani","QAR":"Qatari
+        Rial","RON":"Romanian Leu","RSD":"Serbian Dinar","RUB":"Russian Ruble","RWF":"Rwandan
+        Franc","SAR":"Saudi Riyal","SBD":"Solomon Islands Dollar","SCR":"Seychellois
+        Rupee","SDG":"Sudanese Pound","SEK":"Swedish Krona","SGD":"Singapore Dollar","SHP":"Saint
+        Helena Pound","SLL":"Sierra Leonean Leone","SOS":"Somali Shilling","SRD":"Surinamese
+        Dollar","STD":"S\u00e3o Tom\u00e9 and Pr\u00edncipe Dobra","SVC":"Salvadoran
+        Col\u00f3n","SYP":"Syrian Pound","SZL":"Swazi Lilangeni","THB":"Thai Baht","TJS":"Tajikistani
+        Somoni","TMT":"Turkmenistani Manat","TND":"Tunisian Dinar","TOP":"Tongan Pa\u02bbanga","TRY":"Turkish
+        Lira","TTD":"Trinidad and Tobago Dollar","TWD":"New Taiwan Dollar","TZS":"Tanzanian
+        Shilling","UAH":"Ukrainian Hryvnia","UGX":"Ugandan Shilling","USD":"United
+        States Dollar","UYU":"Uruguayan Peso","UZS":"Uzbekistan Som","VEF":"Venezuelan
+        Bol\u00edvar Fuerte","VND":"Vietnamese Dong","VUV":"Vanuatu Vatu","WST":"Samoan
+        Tala","XAF":"CFA Franc BEAC","XAG":"Silver (troy ounce)","XAU":"Gold (troy
+        ounce)","XCD":"East Caribbean Dollar","XDR":"Special Drawing Rights","XOF":"CFA
+        Franc BCEAO","XPF":"CFP Franc","YER":"Yemeni Rial","ZAR":"South African Rand","ZMK":"Zambian
+        Kwacha (pre-2013)","ZMW":"Zambian Kwacha","ZWL":"Zimbabwean Dollar"}}'
+  recorded_at: Mon, 05 Oct 2020 09:47:21 GMT
+recorded_with: VCR 6.0.0

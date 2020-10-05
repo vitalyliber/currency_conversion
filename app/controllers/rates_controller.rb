@@ -58,7 +58,7 @@ class RatesController < ApplicationController
         rate.update(value: el[1])
       end
     end
-    rates = Rate.all.order(to: :asc)
+    rates = Rate.includes(:to_currency_symbol, :from_currency_symbol).all.order(to: :asc)
 
     render json: { rates: RateSerializer.render_as_hash(rates) }, status: :ok
   end

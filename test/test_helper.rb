@@ -1,6 +1,7 @@
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rails/test_help'
+require "n_plus_one_control/minitest"
 # Load vcr from test/support
 Dir[File.expand_path("../support/**/*.rb", __FILE__)].each { |rb| require(rb) }
 

@@ -41,4 +41,28 @@ class RatesControllerTest < ActionDispatch::IntegrationTest
     assert_equal json['error'],
                  'Errors on the fixer.io API side (rates status: false, symbols_status: false)'
   end
+
+  test 'verify n+1 issues' do
+    populate = lambda do |number|
+      number.times do |n|
+        from = "EUR_#{n}"
+        to = "AUD_#{n}"
+        from_currency_symbol =
+            CurrencySymbol.create!(short: from, long: "EUR_#{n}_long")
+        to_currency_symbol =
+            CurrencySymbol.create!(short: to, long: "AUD_#{n}_long")
+        Rate.create!(
+            to: to,
+            from: from,
+            to_currency_symbol: to_currency_symbol,
+            from_currency_symbol: from_currency_symbol,
+            value: rand(1..7)
+        )
+      end
+    end
+
+    assert_perform_constant_number_of_queries(populate: populate) do
+      get rates_path
+    end
+  end
 end
