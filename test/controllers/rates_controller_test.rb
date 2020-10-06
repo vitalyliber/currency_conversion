@@ -52,8 +52,6 @@ class RatesControllerTest < ActionDispatch::IntegrationTest
         to_currency_symbol =
             CurrencySymbol.create!(short: to, long: "AUD_#{n}_long")
         Rate.create!(
-            to: to,
-            from: from,
             to_currency_symbol: to_currency_symbol,
             from_currency_symbol: from_currency_symbol,
             value: rand(1..7)
