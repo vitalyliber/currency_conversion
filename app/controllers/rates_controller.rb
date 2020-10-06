@@ -31,10 +31,9 @@ class RatesController < ApplicationController
         )
       end
       from = rates_json['base']
-      from_symbol_object =
-          symbols_json['symbols'].find { |el| el[0] === from }
+      from_symbol_object = symbols_json['symbols'].find { |el| el[0] === from }
       from_symbol_record =
-          CurrencySymbol.find_or_initialize_by(short: from_symbol_object[0])
+        CurrencySymbol.find_or_initialize_by(short: from_symbol_object[0])
       if from_symbol_record.long != from_symbol_object[1]
         from_symbol_record.update!(long: from_symbol_object[1])
       end
@@ -50,15 +49,16 @@ class RatesController < ApplicationController
 
         rate =
           Rate.find_or_create_by(
-            from: from,
-            to: to,
             to_currency_symbol: to_symbol_record,
             from_currency_symbol: from_symbol_record
           )
         rate.update(value: el[1])
       end
     end
-    rates = Rate.includes(:to_currency_symbol, :from_currency_symbol).all.order(to: :asc)
+    rates =
+      Rate.includes(:to_currency_symbol, :from_currency_symbol).all.order(
+        '"currency_symbols"."short" ASC'
+      )
 
     render json: { rates: RateSerializer.render_as_hash(rates) }, status: :ok
   end
